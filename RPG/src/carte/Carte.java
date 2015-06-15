@@ -369,7 +369,7 @@ public class Carte implements Serializable{
 			return 0;
 
 	}
-	public void attaquer(Heros p, int numMain){
+	public ArrayList<Monstre> attaquer(Heros p, int numMain){
 		ArrayList <Monstre> monstre_a_attaquer = new ArrayList<Monstre>();
 		for(int i = 0; i < nbLig; i++){
 			for(int j = 0; j<nbCol; j++){
@@ -430,18 +430,21 @@ public class Carte implements Serializable{
 		}
 		
 		if(monstre_a_attaquer.isEmpty()==false){
-			System.out.println("Quel monstre souhaitez-vous attaquer?" );
+			System.out.println("Le return a fonctionné!");
+			return monstre_a_attaquer;
+
+		/*	System.out.println("Quel monstre souhaitez-vous attaquer?" );
 			Monstre.afficheCollectionMonstreAttaque(monstre_a_attaquer);
 			Scanner scanner = new Scanner(System.in);
 			int choix = 0;
-			int f = -1;
-			
+			int f = -1;*/
+		/*	
 			while(f == -1 ){
 				try{
 					choix = scanner.nextInt();
 	
 					if(choix == 0){
-						return;
+						return null;
 					}
 				if(numMain == 1)
 					p.getMainDroite().attaquer(p, monstre_a_attaquer.get(choix-1));		
@@ -464,10 +467,13 @@ public class Carte implements Serializable{
 				}
 			}
 		}
-		
-		p.translaterPa(-4);
-		monstre_a_attaquer.clear();	
+		*/
+//		p.translaterPa(-4);
+	//	monstre_a_attaquer.clear();	
+		}
+		System.out.println("Le return a echoué");
 
+		return monstre_a_attaquer;
 	}
 
 	

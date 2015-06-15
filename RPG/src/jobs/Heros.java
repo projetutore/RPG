@@ -166,7 +166,7 @@ public class Heros extends Personnage implements Elements {
      */
     public static final int PTS_NIV = 3;
     
-    
+    public int ptsRestant;
     
     
     /**
@@ -631,7 +631,7 @@ public class Heros extends Personnage implements Elements {
                         gNiveau++;
                         
                 }
-                base = new FichePerso(this.getNom(),this, PTS_NIV*gNiveau);
+                ptsRestant += PTS_NIV*gNiveau;
                 this.remiseDegree();
     }
 
