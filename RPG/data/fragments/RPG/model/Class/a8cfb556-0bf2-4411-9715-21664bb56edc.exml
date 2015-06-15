@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Baton" version="3">
+  <DEPS>
+    <ID name="Baton" mc="Class" uid="a8cfb556-0bf2-4411-9715-21664bb56edc"/>
+    <EXTID name="Armes" mc="Class" uid="0637a10f-8484-41be-b21a-eb39c7c01b0b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Baton" mc="Class" uid="a8cfb556-0bf2-4411-9715-21664bb56edc"/>
+    <PID name="rpg" mc="Package" uid="10d5e047-1853-4d76-9b6c-19698a2aa7d8"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Baton]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="b377cfad-e0a1-43e3-9912-2246c2716272"/>
+          <PID name="Baton" mc="Class" uid="a8cfb556-0bf2-4411-9715-21664bb56edc"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Armes" mc="Class" uid="0637a10f-8484-41be-b21a-eb39c7c01b0b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

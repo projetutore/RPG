@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="rpg" version="3">
+  <DEPS>
+    <ID name="rpg" mc="Package" uid="10d5e047-1853-4d76-9b6c-19698a2aa7d8"/>
+    <COMPID name="Armes" mc="Class" uid="0637a10f-8484-41be-b21a-eb39c7c01b0b"/>
+    <COMPID name="Baton" mc="Class" uid="a8cfb556-0bf2-4411-9715-21664bb56edc"/>
+    <COMPID name="Carte" mc="Class" uid="e7f114b1-2c62-4510-9ab1-986d67d56b79"/>
+    <COMPID name="Choix Personnage" mc="UseCase" uid="11aff6eb-fdbf-4817-90bf-d6fcc2cd609e"/>
+    <COMPID name="Choix de la classe" mc="UseCase" uid="2a161ac5-4ad0-4c21-8815-49a40cce1b52"/>
+    <COMPID name="Choix du nom" mc="UseCase" uid="6b85ccdd-0661-4ee3-be37-24e563e4fa87"/>
+    <COMPID name="Class1" mc="Class" uid="fd2aee4f-2049-42a6-a777-fcd77c4340ad"/>
+    <COMPID name="Combattre " mc="UseCase" uid="7adeadd8-6613-40fc-ad87-48b59f9bbf3d"/>
+    <COMPID name="Commencer" mc="UseCase" uid="77d95ffa-a0e6-4c37-b495-17a5da32f4e6"/>
+    <COMPID name="Creation Personnage" mc="UseCase" uid="32cb43d8-686e-4efe-b544-bdbbe56e5c79"/>
+    <COMPID name="Diagramme de cas d'utilisation rpg" mc="UseCaseDiagram" uid="681d5f05-2639-428a-a00a-981a1e0f140f"/>
+    <COMPID name="Diagramme de classe rpg" mc="ClassDiagram" uid="b72ce0c3-08f7-420c-95d4-7e7a472f32b8"/>
+    <COMPID name="Epee" mc="Class" uid="09acb36d-c588-4830-9ebf-6fd554a9fd3f"/>
+    <COMPID name="Epée Lourde" mc="Class" uid="7f198a12-6d85-4e46-94ed-7ec4cae69575"/>
+    <COMPID name="Equiper" mc="UseCase" uid="74d8cd4f-2df2-4935-9041-1209ab265a59"/>
+    <COMPID name="Gagner de l'experience" mc="UseCase" uid="cd25637b-14ca-4c81-9c85-0a5ab974896d"/>
+    <COMPID name="Hache" mc="Class" uid="c68cbc16-40b7-4e6a-ae61-22cab9db9ca5"/>
+    <COMPID name="Inventaire" mc="UseCase" uid="cf8efa78-5c31-4d38-9fb5-a55892eb141a"/>
+    <COMPID name="Jouer" mc="UseCase" uid="f8cb6063-723c-40db-8d89-7784ee2c4a50"/>
+    <COMPID name="Joueur" mc="Actor" uid="76684327-6c8c-4296-a934-d8ee8eac1545"/>
+    <COMPID name="Lance" mc="Class" uid="15d50ff8-dca0-439f-b85e-2220655b5dca"/>
+    <COMPID name="Legendaires" mc="Class" uid="52c37596-d761-4559-983e-cea2032e3345"/>
+    <COMPID name="Normale" mc="Class" uid="a534f474-f4ca-43ab-ba7d-2fb4a93f6974"/>
+    <COMPID name="Objet" mc="Class" uid="33ec9750-d19c-4cbd-869e-2d11bcebafe3"/>
+    <COMPID name="Quitter" mc="UseCase" uid="87d2cd58-fbf3-499b-953d-e631fc86f343"/>
+    <COMPID name="Reprendre" mc="UseCase" uid="efc1ae85-bb56-43c8-a69d-dab624218ef2"/>
+    <COMPID name="Sauvegarde" mc="UseCase" uid="d1104242-ace0-4c2f-9a7f-2fc9259efe7a"/>
+    <COMPID name="Se deplacer" mc="UseCase" uid="da2a7dda-6a5a-43ba-b2aa-789dc11387ac"/>
+    <COMPID name="Utiliser" mc="UseCase" uid="af81083f-c628-4ccb-b17f-88bc48ac41fd"/>
+    <COMPID name="java" mc="Package" uid="ec074992-d5f7-4dbf-bbe5-9f518e3bbeb4"/>
+    <COMPID name="jobs" mc="Package" uid="e936dddf-1f00-4d89-a7e5-a73155385a46"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="2fb38baf-1402-461c-b002-fdfbced9f5ed"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="rpg" mc="Package" uid="10d5e047-1853-4d76-9b6c-19698a2aa7d8"/>
+    <PID name="RPG" mc="Project" uid="69e74bad-24ad-4444-ab9a-d59745e9f758"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[rpg]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="java" mc="Package" uid="ec074992-d5f7-4dbf-bbe5-9f518e3bbeb4"/>
+        <COMPID name="jobs" mc="Package" uid="e936dddf-1f00-4d89-a7e5-a73155385a46"/>
+        <COMPID name="Joueur" mc="Actor" uid="76684327-6c8c-4296-a934-d8ee8eac1545"/>
+        <COMPID name="Commencer" mc="UseCase" uid="77d95ffa-a0e6-4c37-b495-17a5da32f4e6"/>
+        <COMPID name="Quitter" mc="UseCase" uid="87d2cd58-fbf3-499b-953d-e631fc86f343"/>
+        <COMPID name="Reprendre" mc="UseCase" uid="efc1ae85-bb56-43c8-a69d-dab624218ef2"/>
+        <COMPID name="Creation Personnage" mc="UseCase" uid="32cb43d8-686e-4efe-b544-bdbbe56e5c79"/>
+        <COMPID name="Choix Personnage" mc="UseCase" uid="11aff6eb-fdbf-4817-90bf-d6fcc2cd609e"/>
+        <COMPID name="Jouer" mc="UseCase" uid="f8cb6063-723c-40db-8d89-7784ee2c4a50"/>
+        <COMPID name="Inventaire" mc="UseCase" uid="cf8efa78-5c31-4d38-9fb5-a55892eb141a"/>
+        <COMPID name="Combattre " mc="UseCase" uid="7adeadd8-6613-40fc-ad87-48b59f9bbf3d"/>
+        <COMPID name="Se deplacer" mc="UseCase" uid="da2a7dda-6a5a-43ba-b2aa-789dc11387ac"/>
+        <COMPID name="Gagner de l'experience" mc="UseCase" uid="cd25637b-14ca-4c81-9c85-0a5ab974896d"/>
+        <COMPID name="Sauvegarde" mc="UseCase" uid="d1104242-ace0-4c2f-9a7f-2fc9259efe7a"/>
+        <COMPID name="Choix du nom" mc="UseCase" uid="6b85ccdd-0661-4ee3-be37-24e563e4fa87"/>
+        <COMPID name="Choix de la classe" mc="UseCase" uid="2a161ac5-4ad0-4c21-8815-49a40cce1b52"/>
+        <COMPID name="Equiper" mc="UseCase" uid="74d8cd4f-2df2-4935-9041-1209ab265a59"/>
+        <COMPID name="Utiliser" mc="UseCase" uid="af81083f-c628-4ccb-b17f-88bc48ac41fd"/>
+        <COMPID name="Carte" mc="Class" uid="e7f114b1-2c62-4510-9ab1-986d67d56b79"/>
+        <COMPID name="Objet" mc="Class" uid="33ec9750-d19c-4cbd-869e-2d11bcebafe3"/>
+        <COMPID name="Armes" mc="Class" uid="0637a10f-8484-41be-b21a-eb39c7c01b0b"/>
+        <COMPID name="Epee" mc="Class" uid="09acb36d-c588-4830-9ebf-6fd554a9fd3f"/>
+        <COMPID name="Lance" mc="Class" uid="15d50ff8-dca0-439f-b85e-2220655b5dca"/>
+        <COMPID name="Hache" mc="Class" uid="c68cbc16-40b7-4e6a-ae61-22cab9db9ca5"/>
+        <COMPID name="Legendaires" mc="Class" uid="52c37596-d761-4559-983e-cea2032e3345"/>
+        <COMPID name="Normale" mc="Class" uid="a534f474-f4ca-43ab-ba7d-2fb4a93f6974"/>
+        <COMPID name="Baton" mc="Class" uid="a8cfb556-0bf2-4411-9715-21664bb56edc"/>
+        <COMPID name="Epée Lourde" mc="Class" uid="7f198a12-6d85-4e46-94ed-7ec4cae69575"/>
+        <COMPID name="Class1" mc="Class" uid="fd2aee4f-2049-42a6-a777-fcd77c4340ad"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="2fb38baf-1402-461c-b002-fdfbced9f5ed"/>
+        <COMPID name="Diagramme de classe rpg" mc="ClassDiagram" uid="b72ce0c3-08f7-420c-95d4-7e7a472f32b8"/>
+        <COMPID name="Diagramme de cas d'utilisation rpg" mc="UseCaseDiagram" uid="681d5f05-2639-428a-a00a-981a1e0f140f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

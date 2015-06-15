@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Normale" version="3">
+  <DEPS>
+    <ID name="Normale" mc="Class" uid="a534f474-f4ca-43ab-ba7d-2fb4a93f6974"/>
+    <EXTID name="Epee" mc="Class" uid="09acb36d-c588-4830-9ebf-6fd554a9fd3f"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Normale" mc="Class" uid="a534f474-f4ca-43ab-ba7d-2fb4a93f6974"/>
+    <PID name="rpg" mc="Package" uid="10d5e047-1853-4d76-9b6c-19698a2aa7d8"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Normale]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="6e322c25-f695-4247-9823-a6daf81a5055"/>
+          <PID name="Normale" mc="Class" uid="a534f474-f4ca-43ab-ba7d-2fb4a93f6974"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Epee" mc="Class" uid="09acb36d-c588-4830-9ebf-6fd554a9fd3f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lance" version="3">
+  <DEPS>
+    <ID name="Lance" mc="Class" uid="15d50ff8-dca0-439f-b85e-2220655b5dca"/>
+    <EXTID name="Armes" mc="Class" uid="0637a10f-8484-41be-b21a-eb39c7c01b0b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Lance" mc="Class" uid="15d50ff8-dca0-439f-b85e-2220655b5dca"/>
+    <PID name="rpg" mc="Package" uid="10d5e047-1853-4d76-9b6c-19698a2aa7d8"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Lance]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="b2c5f96d-5750-4387-9f5a-2b90c0aa957b"/>
+          <PID name="Lance" mc="Class" uid="15d50ff8-dca0-439f-b85e-2220655b5dca"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Armes" mc="Class" uid="0637a10f-8484-41be-b21a-eb39c7c01b0b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

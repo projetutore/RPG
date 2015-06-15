@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="jobs" version="3">
+  <DEPS>
+    <ID name="jobs" mc="Package" uid="e936dddf-1f00-4d89-a7e5-a73155385a46"/>
+    <COMPID name="Arcane" mc="Class" uid="b0b9c453-102d-481a-aefd-e70abc8e9936"/>
+    <COMPID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+    <COMPID name="Effet" mc="Class" uid="99e302d9-6fc6-4471-aaea-7c746d8c3077"/>
+    <COMPID name="Heros" mc="Class" uid="2205ae55-09e5-4d6b-8984-b9c3e42fc46a"/>
+    <COMPID name="Jobs" mc="Class" uid="087d285a-60e4-4d7f-adf4-434e9a9065bf"/>
+    <COMPID name="Monstre" mc="Class" uid="121f8a07-60f8-440c-8968-75b909c561b4"/>
+    <COMPID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+    <COMPID name="Type" mc="Class" uid="7f6c4969-d33a-449f-8b22-c02b92487ec8"/>
+    <FOREIGNID name="JavaPackage" mc="Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="jobs" mc="Package" uid="e936dddf-1f00-4d89-a7e5-a73155385a46"/>
+    <PID name="rpg" mc="Package" uid="10d5e047-1853-4d76-9b6c-19698a2aa7d8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[jobs]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Monstre" mc="Class" uid="121f8a07-60f8-440c-8968-75b909c561b4"/>
+        <COMPID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+        <COMPID name="Jobs" mc="Class" uid="087d285a-60e4-4d7f-adf4-434e9a9065bf"/>
+        <COMPID name="Effet" mc="Class" uid="99e302d9-6fc6-4471-aaea-7c746d8c3077"/>
+        <COMPID name="Arcane" mc="Class" uid="b0b9c453-102d-481a-aefd-e70abc8e9936"/>
+        <COMPID name="Heros" mc="Class" uid="2205ae55-09e5-4d6b-8984-b9c3e42fc46a"/>
+        <COMPID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+        <COMPID name="Type" mc="Class" uid="7f6c4969-d33a-449f-8b22-c02b92487ec8"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaPackage" mc="Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
