@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Epée Lourde" version="3">
+  <DEPS>
+    <ID name="Epée Lourde" mc="Class" uid="7f198a12-6d85-4e46-94ed-7ec4cae69575"/>
+    <EXTID name="Epee" mc="Class" uid="09acb36d-c588-4830-9ebf-6fd554a9fd3f"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Epée Lourde" mc="Class" uid="7f198a12-6d85-4e46-94ed-7ec4cae69575"/>
+    <PID name="rpg" mc="Package" uid="10d5e047-1853-4d76-9b6c-19698a2aa7d8"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Epée Lourde]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="7156b33d-0665-480e-ba65-582e5197689e"/>
+          <PID name="Epée Lourde" mc="Class" uid="7f198a12-6d85-4e46-94ed-7ec4cae69575"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Epee" mc="Class" uid="09acb36d-c588-4830-9ebf-6fd554a9fd3f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,1411 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Combat" version="3">
+  <DEPS>
+    <ID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+    <EXTID name="Heros" mc="Class" uid="2205ae55-09e5-4d6b-8984-b9c3e42fc46a"/>
+    <EXTID name="Monstre" mc="Class" uid="121f8a07-60f8-440c-8968-75b909c561b4"/>
+    <EXTID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+    <EXTID name="Random" mc="Class" uid="a263b141-c33a-44ce-9b70-df4ffd767e7b"/>
+    <EXTID name="Scanner" mc="Class" uid="a6f5192b-52e2-4647-b882-04f4699ad85c"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+    <PID name="jobs" mc="Package" uid="e936dddf-1f00-4d89-a7e5-a73155385a46"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Combat]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="Combat" mc="Operation" uid="7cd3477c-bdc1-417c-8774-ca885ceb71b9"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[Combat]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="heros" mc="Parameter" uid="3acb5e92-db0c-4227-9c53-1f7d41aeab6f"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[heros]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Heros" mc="Class" uid="2205ae55-09e5-4d6b-8984-b9c3e42fc46a"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="monstre" mc="Parameter" uid="ed1edc32-bc2c-4355-81d7-9e1042a69b73"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[monstre]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Monstre" mc="Class" uid="121f8a07-60f8-440c-8968-75b909c561b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6892687b-3c0e-4358-ad0e-a76505b452f3"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return;]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="2f643fdd-c3a2-4866-8855-f67ebfea5d0f"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// initialisation du nombre de tour pour le bonus d'Experience
+int nbtour = 0; 
+for(nbtour = 1; (monstre.getVie()>0 && heros.getVie()>0) ; nbtour++){
+    do{
+        actionJoueur(heros, monstre);
+        
+    try {
+        Thread.sleep(100);
+    } catch (InterruptedException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
+    
+    actionMonstre(monstre, heros);
+    resetDefense(monstre);
+    resetDefense(heros);
+    }while(heros.getPa()>0);
+        actionMonstre(monstre, heros);
+        resetDefense(monstre);
+        resetDefense(heros);
+    /* if (heros.getPa()<heros.getMaxPa())
+        heros.setPa(heros.getPa()+1); */
+    
+}
+int xp = heros.gainExperience(calculExperience(nbtour, monstre.getExperienceDonnee()));
+System.out.println("Votre personnage a gagn� " + xp + " exp�rience son exp�rience est � present de " + heros.getExperience());
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="actionJoueur" mc="Operation" uid="8a18bf43-bac5-4a41-817f-bb35b95f5c63"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[actionJoueur]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="heros" mc="Parameter" uid="d6132755-087e-431f-a67f-89d48334057e"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[heros]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Heros" mc="Class" uid="2205ae55-09e5-4d6b-8984-b9c3e42fc46a"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="monstre" mc="Parameter" uid="acbe3465-9950-4fb1-8c4f-afa9141ddfb5"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[monstre]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Monstre" mc="Class" uid="121f8a07-60f8-440c-8968-75b909c561b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a7be7f27-98d3-47de-901a-5378c539b83b"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[System.out.println("PA = " + heros.getPa());
+System.out.println("Que souhaitez vous que votre personnage fasse? \n1- Attaquer \n2- Defendre \n3- Arcane \n4- Enchainement ");
+        @SuppressWarnings("resource")
+        Scanner choix = new Scanner(System.in);
+        int action = choix.nextInt();
+        switch(action){
+        case 1:
+            attaque(heros, monstre);
+            break;
+        case 2:
+            defense(heros);
+            System.out.println("Votre personnage se d�fend");
+            break;
+        case 3:
+            for(Arcane i : heros.getTabArcaneHeros())
+                if(i != null)
+                    System.out.println(i.getNomArcane()+ " PA: " + i.getCoutPA());
+            
+            action = choix.nextInt();
+            switch(action){
+            case 0 : return;
+            }
+            break;
+        case 4: 
+            Enchainement(heros, monstre);
+            break;
+        }
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="actionMonstre" mc="Operation" uid="f24efc6e-89fa-4ab3-96f0-586c583badc6"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[actionMonstre]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="monstre" mc="Parameter" uid="beb8625b-eaaa-4d5e-b588-d37aaf7994c3"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[monstre]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Monstre" mc="Class" uid="121f8a07-60f8-440c-8968-75b909c561b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="heros" mc="Parameter" uid="ca5cf27a-1fe1-443b-9622-5aac248446fb"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[heros]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Heros" mc="Class" uid="2205ae55-09e5-4d6b-8984-b9c3e42fc46a"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e2a446a0-94f0-432a-b132-116204d137ad"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(monstre.attaqueSelonHeros(heros) == 1){
+attaque(monstre, heros);
+}
+else if(monstre.attaqueSelonHeros(heros) == 3){
+    explosion(monstre, heros);
+}
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="calculDegats" mc="Operation" uid="045dc1d7-add6-426d-8224-bcd5296287b8"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[calculDegats]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="p1" mc="Parameter" uid="ca735d99-4906-4e65-8e6d-79ce9c97d648"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="p2" mc="Parameter" uid="c0f0c96f-43a1-4607-aedb-54501df6dcef"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="cfb3ecb7-2cc5-4c2d-b6e5-f835085ab1fe"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="49a89ce7-e23f-4a80-aa89-399e6e56c413"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/*    public int deroulement(Heros h, Personnage y){
+        int nbtour = 0; // initialisation du nombre de tour qui permet un bonus d'xp
+        for(nbtour = 1; (monstre.getVie()>0 && heros.getVie()>0); nbtour++){
+            System.out.println(heros.getPa());
+            
+            switch (action){
+            
+            case 1: // si le joueur tape 1, il attaque l'ennemi.
+                int degatSubitAttaque = calculDegats(heros,y);
+                monstre.setVie(monstre.getVie()-degatSubitAttaque);
+                System.out.println("Votre personnage attaque et retire "+ degatSubitAttaque+" de vie � "+monstre.getNom() + " " + (monstre.getVie()));
+                y.getVie();
+                System.out.println("Tour :" + nbtour+ " ");
+                heros.setPa(heros.getPa()-1);// jusqu'� ici = fonction tour joueur
+                if(monstre.getVie() <0)
+                    break;
+                int degatSubitDefense = calculDegats(y,heros);
+                heros.setVie(heros.getVie()-degatSubitDefense);
+                System.out.println("Votre personnage est attaqu�, il perd"+ degatSubitDefense+" de vie "+heros.getNom() + " " + ( heros.getVie() ) );
+                break;
+                
+                
+            case 3:/*en tapant 3, le joueur s'appr�te � lancer un de ses arcanes contenues 
+            dans la liste des sorts, il  a de nouveau un sort � selectionner.
+                for(Sort i : h.getTabSortHeros())
+                    System.out.println(i);
+                action = choix.nextInt();
+                switch(action){
+                }
+                break;
+                
+            case 4:
+                this.Enchainement(heros, monstre);
+                heros.setPa(heros.getPa() -1 );
+                break;
+            }
+            
+        if (heros.getPa()<h.getPa())
+            heros.setPa(heros.getPa()+1);
+
+        }
+        System.out.println(nbtour);
+        if(heros.getVie()<0){
+            System.out.println("Vous avez perdu, game over!");
+            return 0;
+        }
+        h.gainExperience(calculExperience(nbtour, 40));
+        System.out.println("Votre personnage a gagn� 40 exp�rience son exp�rience est � present de " + h.getExperience());
+        return 1;
+    }*/
+/*
+ * La fonction qui calcule les d�g�ts prend en compte deux personnages.
+ * Le personnage p1 tire un d� de 20 qui d�termine le pourcentage de force en + que poss�dera son attaque
+ * Le personnage p2 tire �galement un d� de 20 qui determine le pourcentage de Constitution en + que poss�dera sa d�fense.
+ * De plus, un d� de 20 est �galement tir� pour savoir si le personnage fera un coup critique.
+ * Dans le cas o� la d�fense du p2 est sup�rieur � celle du p1, la fonction retourne 0, dans le cas contraire,
+ * les d�gats sont ceux d'attAleatoire.
+ */]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="e7a86772-6d63-467d-a81e-0455bbd94a64"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return coup ;]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="42a56f11-3491-4c66-b891-56b9cf929a36"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// le personnage p1 est celui qui attaque, le p2 celui qui defend. 
+Random random = new Random(); 
+int rand = random.nextInt(21);
+int coup = 0;
+rand+=10; 
+double attAleatoire = (rand * p1.getForce() ) /100 ; // de 10 a 30%
+rand = random.nextInt(21)+10;
+double defenseAleatoire = (rand * p2.getConstitution()) / 100; // de 10 a 30%
+int coupCritique = random.nextInt(20)+1;    
+coup = (int) ((int) ((p1.getForce())+attAleatoire)-(p2.getConstitution()+defenseAleatoire));
+
+/*
+ * Ici, on verifie si le personnage est de type heros et si son job est LanceRouge, dans ce cas
+ * on effectue Percer qui ignore 1/3 de la constitution adverse.
+ */
+if ((p1 instanceof Heros)){
+    ((Heros) p1).getJob().getNomJob().equals("LanceRouge");
+    coup = (int) (int) ((p1.getForce()+attAleatoire) - ((2/3)*(p2.getConstitution())+defenseAleatoire));
+    p2.setVie(p2.getVie()-coup);
+    return coup;
+}
+/*
+ * Dans le cas contraire, le calcul s'effectue normalement. 
+ */
+else if (p2.getConstitution()+defenseAleatoire > p1.getForce()+attAleatoire)
+    System.out.println(p1.getNom() + " Tente d'attaquer " + p2.getNom() + ". Ce coup ne fait aucun d�g�t " + p2.getNom() + " n'a perdu aucun points de vie");
+else if(coupCritique == 1){
+    System.out.println("Coup critique!");
+    coup = (int) ((int) ((p1.getForce())+attAleatoire)-(p2.getConstitution()+defenseAleatoire));
+    p2.setVie(p2.getVie()-coup);
+    return coup;
+}
+p2.setVie(p2.getVie()-coup);
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="calculDegatsMagique" mc="Operation" uid="1c116300-0548-476a-a380-42f0764ae969"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[calculDegatsMagique]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="p1" mc="Parameter" uid="9e43a534-7872-4a5c-90cb-049f8554aa73"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="p2" mc="Parameter" uid="0847f963-a7aa-441f-8ca1-6e4e812c0ead"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="0d359e3a-e617-4b35-b386-6c898d31c93e"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="explosion" mc="Operation" uid="5bfb7dcb-7b10-4a6e-9605-76ba6f6352c6"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[explosion]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="monstre" mc="Parameter" uid="99625d3e-a36b-4b52-82f2-21a09b16717f"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[monstre]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Monstre" mc="Class" uid="121f8a07-60f8-440c-8968-75b909c561b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="heros" mc="Parameter" uid="bf7cf232-c1ba-4d81-97a9-6daa579562be"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[heros]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Heros" mc="Class" uid="2205ae55-09e5-4d6b-8984-b9c3e42fc46a"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="754c710a-409d-4c81-adc4-229603cfb4bc"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[int explosion_m = monstre.getMaxVie()/4;
+heros.setVie(heros.getVie()-explosion_m);
+System.out.println(monstre.getNom() + " s'autod�truit. Il inflige " + explosion_m + " � " + heros.getNom());
+monstre.setVie(0);
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="attaque" mc="Operation" uid="1e472f07-3758-445f-8374-21b7c35ce661"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[attaque]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="p1" mc="Parameter" uid="53a9eeba-0c45-4d86-8a0f-862971d5558c"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="p2" mc="Parameter" uid="65397d74-f4dc-4104-ba1f-69a5bfa85ea1"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d52638ac-140e-43b1-a9e7-1ecc1000aef2"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/*
+ * Fonction qui prend en param�tre deux personnages    
+ */]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="5658c775-620e-4860-a0fa-dc32d0b41b43"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[int degats = calculDegats(p1, p2);
+try {
+    Thread.sleep(500);
+} catch (InterruptedException e) {
+    // TODO Auto-generated catch block
+    e.printStackTrace();
+}
+
+if (degats > 0){
+    if(p1 instanceof Monstre){
+    System.out.println( p2.getNom()+ " est attaqu� par " + p1.getNom() + " et perd " + degats + ". "
+            + " Sa vie est de " + p2.getVie() + ".");
+}
+    else
+    System.out.println( p1.getNom() + " inflige " + degats + " � " + p2.getNom()+
+            "\nIl lui reste � present " + p2.getVie());
+}
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="defense" mc="Operation" uid="fcf58d0e-fee0-4f48-9ccb-36d0a6610230"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[defense]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="p" mc="Parameter" uid="78007fc8-38bf-4aff-9527-73175b4de7dd"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="c01289a4-13b6-4302-a6d3-42e66e2d03f4"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/*
+     * La fonction defense augmente la constitution du personnage de 30%    
+     */]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="7017e8f7-a27c-4843-812e-601c1db05e70"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[p.setConstitution( p.getConstitution() + (30*p.getConstitution() / 100 ));
+System.out.println(p.getConstitution());
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="resetDefense" mc="Operation" uid="b3161646-b435-4e83-a23c-d3cb004b2fbf"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[resetDefense]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="p" mc="Parameter" uid="390e4a5e-4ad2-4fdf-80a0-c0c09c330a70"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="cb0723ab-8179-4d65-b7b3-ab28e720bd72"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(p.getConstitution() >= 30*p.getMaxConstitution()/100 && p.getConstitution() <=31*p.getMaxConstitution()/100);
+    p.setConstitution( p.getConstitution() - (30*p.getConstitution() / 100 ));
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Enchainement" mc="Operation" uid="2bd31c1a-d3eb-4fe4-8fdf-0f9447143268"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[Enchainement]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="p1" mc="Parameter" uid="3762dad3-3461-42f6-b08d-89524e943d92"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="p2" mc="Parameter" uid="5697ce93-d8a6-4ba6-80ec-5a8ed97c9589"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8917f653-ad1e-4557-b35d-63613248ceff"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[int enchainementContinu = 0 ;
+while(p1.getPa()>0){
+    System.out.println("Que sera donc votre enchainement?\n 1-Attaquer \n 2-Arcanes \n");
+    @SuppressWarnings("resource")
+    Scanner choix = new Scanner(System.in);
+    int action = choix.nextInt();
+    switch (action){
+    case 0:
+        return;
+    case 1:
+        attaque(p1, p2);
+        p1.setPa(p1.getPa()-1+enchainementContinu);
+        System.out.println(p1.getPa());
+        enchainementContinu--;
+        break;
+    }
+}
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="calculPa" mc="Operation" uid="d9fea520-8775-4eb4-aed1-0f7059db6976"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[calculPa]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="p" mc="Parameter" uid="fc5dee61-a5f9-4140-ad19-ddad47af7261"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Personnage" mc="Class" uid="b6fc6c34-1a11-4461-b346-31fcb882d568"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="calculExperience" mc="Operation" uid="6c8f200b-690c-47ee-9e8d-8f77397b0a58"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[calculExperience]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="nbtour" mc="Parameter" uid="24e093da-4bc7-4c1f-8ba3-844b8f3353a1"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[nbtour]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="experience" mc="Parameter" uid="f9c899e2-72a5-4dbb-90f4-7d4c3142a55b"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[experience]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="e5179bb0-1b81-414d-bd5b-3bf31ecfa523"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="21c2b6d1-0166-4d0c-a712-910f811b6628"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return 2*experience - bonusExperience(nbtour-2, experience);]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="bonusExperience" mc="Operation" uid="36f61c0b-9b33-41e5-aa93-d5ae7c2c809b"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[bonusExperience]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="nbtour" mc="Parameter" uid="5a8a805a-d2c2-4292-b750-144b6f7a959f"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[nbtour]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="experience" mc="Parameter" uid="20c573f2-a789-4d7e-912a-fd85eb2a4b68"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[experience]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="bfd2b343-2b81-42d8-85ff-d09e46f2dfc7"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8e0ec18a-e253-4591-89d3-1192b0654cd8"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return experienceGagnee;]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="ab7ab636-066d-415e-b668-476f1b4bd668"/>
+                <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[int experienceGagnee = (nbtour * experience)/10;
+if (experienceGagnee>experience){
+    return experience;
+}
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="6738396a-be84-4075-b4a8-e719028a3835"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="Random" mc="Class" uid="a263b141-c33a-44ce-9b70-df4ffd767e7b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="32924c53-997f-4f71-9f10-028a23d80d30"/>
+          <PID name="Combat" mc="Class" uid="5c7f8217-f04a-40a3-9b42-6ed84ff6e0b6"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="Scanner" mc="Class" uid="a6f5192b-52e2-4647-b882-04f4699ad85c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Hache" version="3">
+  <DEPS>
+    <ID name="Hache" mc="Class" uid="c68cbc16-40b7-4e6a-ae61-22cab9db9ca5"/>
+    <EXTID name="Armes" mc="Class" uid="0637a10f-8484-41be-b21a-eb39c7c01b0b"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Hache" mc="Class" uid="c68cbc16-40b7-4e6a-ae61-22cab9db9ca5"/>
+    <PID name="rpg" mc="Package" uid="10d5e047-1853-4d76-9b6c-19698a2aa7d8"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Hache]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="729f3b43-4b67-4090-8e92-5149413c526f"/>
+          <PID name="Hache" mc="Class" uid="c68cbc16-40b7-4e6a-ae61-22cab9db9ca5"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Armes" mc="Class" uid="0637a10f-8484-41be-b21a-eb39c7c01b0b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
